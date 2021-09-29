@@ -4,7 +4,12 @@ body {
 }
 
 h1 {
-    color: #555;
+    color: rgb(24, 22, 184);
+    background-color: #eee;
+}
+
+h2 {
+    color:rgb(11, 168, 5);
     background-color: #eee;
 }
 
@@ -17,7 +22,7 @@ figcaption span {
     font-size: .85em;
 }
 
-p#product-description {
+p# product-description {
     margin: 20px 0 20px 0;
     text-align: justify;
 }
