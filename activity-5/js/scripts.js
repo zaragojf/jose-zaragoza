@@ -11,7 +11,7 @@
     // Package data array (simulated data source, such as JSON or database recordset)
     var data = [
         {
-            name: 'sSettings Sync',
+            name: 'Settings Sync',
             description: 'Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.',
             author: 'Shan Khan',
             url: 'https://atom.io/https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync/emmet',
@@ -92,11 +92,9 @@
 
     /**
      * Write's the package object's data to the appropriate
-     * DOM elements utlizing the package selector property.
-     * @param {Package} package Package object
-     * @return {void}
+     * DOM elements utilizing the package selector property.
      */
-    var writePackageInfo = function(package) {
+    var writePackageInfo = function (package) {
         // Get reference to DOM elements
         var selector = package.selector,
             nameEl = getEl(selector + '-name'),
@@ -118,8 +116,8 @@
     dateEl.textContent = getTodaysDate();
 
     // Write package data one-by-one
-    var emmet = new Package(data[0]);
-    writePackageInfo(emmet);
+    var SettingSync = new Package(data[0]);
+    writePackageInfo(SettingSync);
 
     var TrailingSpaces = new Package(data[1]);
     writePackageInfo(TrailingSpaces);
