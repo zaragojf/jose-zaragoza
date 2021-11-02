@@ -11,63 +11,42 @@
     // Package data array (simulated data source, such as JSON or database recordset)
     var data = [
         {
-            name: 'Settings Sync',
-            description: 'Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.',
-            author: 'Shan Khan',
-            url: 'https://atom.io/https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync/emmet',
-            downloads: 2775805,
-            stars: 663,
-            price: 0.00,
+            name: 'Baum Bats',
+            description: 'Baum Bats are THE BOMB! The first Baum Bat I purchased lasted over three years, and I still use it for batting practice. You simply can not purchase a wood bat that is longer lasting or has more POP than a Baum Bat. Baum Bats are the best on the market.',
+            url: 'https://baumbat.com/',
+            options: 5,
+            price: '$120-$340',
             selector: 'p1'
         },
         {
-            name: 'Trailing Spaces',
-            description: 'Highlight trailing spaces and delete them in a flash!',
-            author: 'Shardul Mahadik',
-            url: 'https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces',
-            downloads: 788571,
-            stars: 39,
-            price: 0.00,
+            name: '44 Pro Gloves',
+            description: 'The Best Gloves. The Right Prices. Specializing in crafting a truly unique pro quality baseball glove.',
+            url: 'https://44progloves.com/',
+            options: 10,
+            price: '$149-$340',
             selector: 'p2'
         },
         {
-            name: 'Path Intellisense',
-            description: 'Visual Studio Code plugin that autocompletes filenames',
-            author: 'Christian Kohler',
-            url: 'https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense',
-            downloads: 55560454,
-            stars: 94,
-            price: 0.00,
+            name: 'Just Bats',
+            description: "Welcome to the JustBats Experience! We believe that no matter your age, height, or skill level, there is always a reason to take the field. That's why it is our passion to provide the best online shopping experience in the game.",
+            url: 'https://www.justbats.com/',
+            options: 100,
+            price: '$20-$500',
             selector: 'p3'
         },
-        {
-            name: 'CSS Peek',
-            description: 'Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition.',
-            author: 'Pranay Prakash',
-            url: 'https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek',
-            downloads: 2317579,
-            stars: 69,
-            price: 0.00,
-            selector: 'p4'
-        }
     ];
 
-    // (VS Code) Package constructor function
+    // Baseball Bat and Glove Review constructor function
     function Package(data) {
         this.name = data.name;
         this.description = data.description;
-        this.author = data.author;
         this.url = data.url;
-        this.downloads = data.downloads;
-        this.stars = data.stars;
+        this.options = data.options;
+        this.price = data.price;
         this.selector = data.selector;
 
-        this.getFormattedDownloads = function () {
-            return this.downloads.toLocaleString();
-        };
-
-        this.getFormattedStars = function () {
-            return this.stars.toLocaleString();
+        this.getFormattedOptions = function () {
+            return this.options.toLocaleString();
         };
     };
 
@@ -99,16 +78,16 @@
         var selector = package.selector,
             nameEl = getEl(selector + '-name'),
             descEl = getEl(selector + '-description'),
-            authEl = getEl(selector + '-author'),
-            downloadEl = getEl(selector + '-downloads'),
-            starsEl = getEl(selector + '-stars');
+            urlEl = getEl(selector + '-url'),
+            optEl = getEl(selector + '-options'),
+            priceEl = getEl(selector + '-price');
 
             // Write package data to DOM elements
             nameEl.textContent = package.name;
             descEl.textContent = package.description;
-            authEl.textContent = package.author;
-            downloadEl.textContent = package.getFormattedDownloads();
-            starsEl.textContent = package.getFormattedStars();
+            urlEl.textContent = package.url;
+            optEl.textContent = package.getFormattedOptions();
+            priceEl.textContent = package.price;
     };
 
     // Write date
@@ -116,16 +95,13 @@
     dateEl.textContent = getTodaysDate();
 
     // Write package data one-by-one
-    var SettingSync = new Package(data[0]);
-    writePackageInfo(SettingSync);
+    var BaumBat = new Package(data[0]);
+    writePackageInfo(BaumBat);
 
-    var TrailingSpaces = new Package(data[1]);
-    writePackageInfo(TrailingSpaces);
+    var ProGloves = new Package(data[1]);
+    writePackageInfo(ProGloves);
 
-    var PathIntellisense = new Package(data[2]);
-    writePackageInfo(PathIntellisense);
-
-    var CSSPeek = new Package(data[3]);
-    writePackageInfo(CSSPeek);
+    var JustBats = new Package(data[2]);
+    writePackageInfo(JustBats);
 
 }());
