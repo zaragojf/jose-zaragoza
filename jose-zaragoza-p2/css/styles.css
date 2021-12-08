@@ -1,13 +1,4 @@
 /*main styles */
-/*body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
-    color: #555;
-    margin: 0;
-}*/
-
 body {
 	font-family: 'Open Sans', sans-serif;
     font-size: 100%;
@@ -18,11 +9,19 @@ body {
     text-align: center;
 }
 
+body header 
+
 header {
     padding: 5px;
     color: rgb(97, 193, 253);
     text-align: center;
     font-size: 220%;
+}
+
+header div {
+    color:rgb(97, 193, 253);
+    font-size: 125%;
+    text-align: center;
 }
 
 
@@ -61,6 +60,7 @@ main h2  {
     font-size: 190%;
 }
 
+
 main section {
     text-align: center;
     color: rgb(132, 242, 106);
@@ -68,9 +68,10 @@ main section {
 }
 
 footer {
-    text-align: right;
+    text-align: center;
     color: white;
 }
+
 
 /* modal styles */
 #modal-backdrop {

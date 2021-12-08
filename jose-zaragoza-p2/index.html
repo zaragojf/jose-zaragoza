@@ -10,25 +10,37 @@
 <body>
     <header>
         <h1 class="header-title">MKE AG Softball</h1>
+        <div id="date"></div>
     </header>
     <main>
         <h2>League Information</h2>
             <div class="package-container">
                 <section>
-                    <span id="p1-name"></span>
-                </section>
-                <section>
-                    League Director: <span id="p2-name"></span>
-                </section>
-                <section>
-                    Sportsmanship Committee: <span id="p3-name"></span> and <span id="p4-name"></span>
-                </section>
-                <section>
-                    Record Keeping: <span id="p5-name"></span>
+                    <p id="p1-name"></p>
+                    
                 </section>
             </div>
+            <div class="package-container">
+                <section>
+                    League Director: <p id="p2-name"></p>
+                </section>
+            </div>
+            <div class="package-container">
+                <section>
+                    Sportsmanship Committee: <p id="p3-name"></p>
+                </section>
+            </div>
+            <div class="package-container">
+                <section>
+                    Record Keeping: <p id="p4-name"></p>
+                </section>
+            </div>
+            <h2>Score Reporting</h2>
             <div class="header-menu">
-                <h2>Score Reporting</h2><button id="new-button">New</button>
+                <button id="new-button">New</button>
+            </div>
+            <div class="scores">
+                <section id="display-content"></section>
             </div>
     </main>
     <footer>
@@ -52,6 +64,7 @@
             <button id="save-button">Save</button>
         </footer>
     </div>
+    <div id="modal-backdrop"></div>
     <script src="js/scripts.js" charset="utf-8"></script>
 </body>
 </html>
