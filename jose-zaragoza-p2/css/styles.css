@@ -11,7 +11,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-    background-image: url(../jose-zaragoza-p2/images/wick_field.jpg);
+    background-image: url("../images/wick_field.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,6 +22,7 @@ header {
     padding: 5px;
     color: rgb(97, 193, 253);
     text-align: center;
+    font-size: 220%;
 }
 
 
@@ -51,16 +52,19 @@ main #display-content {
 main h1  {
     text-align: center;
     color: rgb(97, 193, 253);
+    font-size: 190%;
 }
 
 main h2  {
     text-align: center;
     color: rgb(97, 193, 253);
+    font-size: 190%;
 }
 
 main section {
     text-align: center;
     color: rgb(132, 242, 106);
+    font-size: 150%;
 }
 
 footer {
