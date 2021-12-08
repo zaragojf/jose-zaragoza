@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKE AG Softball</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">MKE AG Softball</h1>
+    </header>
+    <main>
+        <h2>League Information</h2>
+            <div class="package-container">
+                <section>
+                    <span id="p1-name"></span>
+                </section>
+                <section>
+                    League Director: <span id="p2-name"></span>
+                </section>
+                <section>
+                    Sportsmanship Committee: <span id="p3-name"></span> and <span id="p4-name"></span>
+                </section>
+                <section>
+                    Record Keeping: <span id="p5-name"></span>
+                </section>
+            </div>
+            <div class="header-menu">
+                <h2>Score Reporting</h2><button id="new-button">New</button>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2021 MKE AG Softball</p>
+    </footer>
+
+<!-- Modal Dialog (hidden by default) -->
+    <div class="modal" id="modal-dialog">
+        <section>
+            <h2>Title</h2>
+            <input type="text" id="edit-title-text">
+            <span id="edit-title-message"></span>
+        </section>
+        <section>
+            <h2>Content</h2>
+            <textarea name="edit-content-text" id="edit-content-text" cols="80" rows="8"></textarea>
+            <span id="edit-content-message"></span>
+        </section>
+        <footer>
+            <button id="cancel-button">Cancel</button>
+            <button id="save-button">Save</button>
+        </footer>
+    </div>
+    <script src="js/scripts.js" charset="utf-8"></script>
+</body>
+</html>
